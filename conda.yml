@@ -1,0 +1,25 @@
+name: rag-llm
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  # Install pip packages
+  - pip:
+      - langchain-cli[serve]
+      - langserve[all]
+      - pinecone-client
+      - langchain-community
+      - cohere
+      - openai
+      - jupyter
+      - python-dotenv
+      - numpy
+      - pandas
+      - scikit-learn
+      - jupyterlab
+      - ipywidgets
+
+# Optional: specify a custom environment prefix
+# prefix: /path/to/custom/env
